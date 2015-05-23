@@ -1,16 +1,16 @@
 {
-  "name": "dellin-pages",
-  "version": "1.0.0",
+  "name": "interjacent",
+  "version": "0.0.1",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "README.md",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://git.dellin.ru/dellin-front-end-framework/dellin-pages.git"
+    "url": "interjacent-website.com"
   },
-  "author": "track",
+  "author": "IamEmpty",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.8.11",
