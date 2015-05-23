@@ -1,0 +1,28 @@
+
+link_default()
+  color #2685d1
+  text-decoration underline
+  &:hover
+    color #ff0000
+
+link_dashed()
+  color #2685d1
+  text-decoration none
+  border-bottom 1px dashed #2685d1
+  padding 0 0 1px 0
+  &:hover
+    color #ff0000
+    border-bottom 1px dashed #ff0000
+
+link_dotted()
+  color #2685d1
+  text-decoration none
+  border-bottom 1px dotted #2685d1
+  &:hover
+    color #ff0000
+    border-bottom 1px dotted #ff0000
+
+link_disabled()
+  pointer-events none
+  cursor default
+  color #cccccc

@@ -1,0 +1,67 @@
+path-to-sprite = '/img/sprites/icon-sprite.png'
+
+sprite($sprite) {
+  background url(path-to-sprite)
+  spritePosition($sprite)
+  spriteWidth($sprite)
+  spriteHeight($sprite)
+}
+
+sprites($sprites) {
+  for $sprite in $sprites {
+    $sprite_name = $sprite[9];
+    .{$sprite_name}:after {
+      sprite($sprite)
+    }
+  }
+}
+
+
+sprites($spritesheet_sprites)
+
+
+.icon
+  display inline-block
+  &:after
+    display inline-block
+    content ""
+
+
+.icon-loading
+  &:after
+    background url('{img-path}loading.gif')
+    width 16px
+    height 16px
+    opacity 1
+
+
+.icon-close
+  &:after
+    content: "×"
+    color $light-gray
+    font-size 22px
+
+
+.icon-message-offset
+  margin 3px 0 0 0
+
+
+.icon-ok_with-notes
+  &:before
+    position: absolute
+    display: block
+    content: ''
+    width: 8px
+    height: 8px
+    border-radius: 100%
+    background: $vivid-orange
+    margin: 13px 0 0 14px
+
+
+.icon-ok_with-exclamation
+  &:before
+    sprite($icon-exclamation-mark)
+    display inline-block
+    content ""
+    position absolute
+    margin 10px 0 0 18px

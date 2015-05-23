@@ -1,0 +1,32 @@
+doctype html
+html
+
+  //- Head, include stylesheets, fonts, charset and etc.
+  include /bem-blocks/head/head
+
+  body.help-center
+
+    //- Header
+    include /bem-blocks/header/header
+
+    main.main
+      .container
+
+        //- Breadcrumbs
+        block breadcrumbs
+          include /bem-blocks/breadcrumbs/breadcrumbs
+
+        //- Heading
+        block heading
+          include /bem-blocks/headings/page-title
+
+        //- Main content
+        block content
+
+        //- Forms
+        block forms
+          include /bower_components/dellin-forms/forms
+
+
+    //- Footer
+    include /bem-blocks/footer/footer

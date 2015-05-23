@@ -1,0 +1,31 @@
+.form-block
+  padding: 26px 0 26px 0
+  border-bottom: 1px dashed #bcbcbc
+  position: relative
+
+
+.form-block_primary
+  border-bottom: 1px dashed #000
+
+
+.form-block_muted
+  opacity: .3
+
+  &:after
+    content: ''
+
+
+.form-block_loading
+  &:after
+    left: 0
+    right: 0
+    top: 0
+    margin: 51px auto 0
+    opacity: 1
+    content: ''
+    display: block
+    width: 48px
+    height: 48px
+    position: absolute
+    background: url('/img/loader_big.gif')
+

@@ -1,0 +1,27 @@
+.header-wrapper
+  .container
+    .header-grid-row
+      .header-grid-col-25
+
+        a.header__logotype(href= '#')
+          i.icon.icon-main-logotype
+
+      .header-grid-col-20
+
+        .header__city Набережные челны
+        .address-of-terminals Адреса терминалов
+
+      .header-grid-col-15
+        .header__phone 8-800-100-8000
+        nav.header__nav
+          a.communication-form(href= '#') Форма связи
+          a.help-center(href= '#') Центр помощи
+
+  .header__bottom
+    .container
+      include /bower_components/dellin-top-menu/dellin-top-menu
+
+
+  block axshare-nav
+    include /bower_components/axshare-nav/axshare-nav
+

@@ -1,0 +1,26 @@
+
+include _variables
+
+if footerMenu
+
+  .footer-wrapper
+    footer.footer.container
+      ul.footer-menu
+        each val in footerMenu.items
+          - var current = val
+
+          li.footer-menu__item
+            h3.footer-menu__heading= val.heading
+
+            if index === 6
+              a.footer-menu__logout.footer-menu__logout-link(href= '#') Выйти
+
+            ul.footer-menu_second-level
+              each val in current
+                li.footer-menu_second-level__item
+                  a.footer-menu_second-level__link(href= '#')= val
+
+  //- script(src= '/js/jquery.min.js')
+  //- script(src= '/js/required-filled.js')
+  //- script(src= '/js/dellin-popup.js')
+  //- script(src= '/js/main.js')

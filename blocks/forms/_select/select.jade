@@ -1,0 +1,19 @@
+
+if select
+  .select-wrapper(class= select.fieldWrapperClass)
+    select.select.forms__select-text(class= select.fieldClass)
+      option.select__option(disabled, selected)= select.placeholder
+
+      if select.array
+        each option, optionIndex in select.array
+          if select.chosen == optionIndex
+            option.select__option(selected)= option
+          else
+            option.select__option= option
+
+
+    if select.hint
+      p.message__hint.message__hint-typography.message__hint_error-typography.last-element
+        = select.hint
+
+  - select = {}

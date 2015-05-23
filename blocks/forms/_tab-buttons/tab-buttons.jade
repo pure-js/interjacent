@@ -1,0 +1,14 @@
+
+if tabButtons
+  each button, indicator in tabButtons.array
+
+    // Check index of active button
+    if tabButtons.chosen === indicator
+      - var active = 'tab-buttons__item_active'
+    else
+      - var active = ''
+
+    a.tab-buttons__item(class= active, href= '#')= button
+
+
+  - tabButtons = []

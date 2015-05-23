@@ -1,0 +1,8 @@
+
+if popup
+  .overlay
+  .block-modal-window(class= popup.windowClass)
+    h3.block-modal-window__heading.block-modal-window__heading-typography= popup.heading
+    button.button-reset.modal-window__close ×
+
+    block popup-content

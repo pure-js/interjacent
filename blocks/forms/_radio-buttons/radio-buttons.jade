@@ -1,0 +1,17 @@
+
+if radioButtons
+  if !radioButtons.array
+    - radioButtons.array = ['']
+
+  each radio, radioIndex in radioButtons.array
+    label.form-line__radio-label.form-line__radio-label-typography
+
+      if radioButtons.chosen === radioIndex
+        - isChecked = true
+      else
+        - isChecked = false
+
+      input.form-line__radio(type= 'radio', name= inputName, class= radioButtons.filedClass, checked= isChecked)
+      = radio
+
+  - radioButtons = {}

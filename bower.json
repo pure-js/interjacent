@@ -1,0 +1,25 @@
+{
+  "name": "dellin-pages",
+  "version": "0.0.2",
+  "authors": [
+    "track <artur.dubrovin@dellin.ru>"
+  ],
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "description": "Pages for dellin.ru",
+  "main": "README.md",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "~3.0.3",
+    "angular": "~1.3.15",
+    "dellin-forms": "git://git.dellin.ru/dellin-front-end-framework/dellin-forms.git",
+    "dellin-buttons": "git://git.dellin.ru/dellin-front-end-framework/dellin-buttons.git",
+    "dellin-popup": "git://git.dellin.ru/dellin-front-end-framework/dellin-popup.git",
+    "dellin-tables": "git://git.dellin.ru/dellin-front-end-framework/dellin-tables.git",
+    "dellin-top-menu": "git://git.dellin.ru/dellin-front-end-framework/dellin-top-menu.git",
+    "dellin-panels": "git://git.dellin.ru/dellin-front-end-framework/dellin-panels.git",
+    "dellin-icons": "git://git.dellin.ru/dellin-front-end-framework/dellin-icons.git"
+  }
+}

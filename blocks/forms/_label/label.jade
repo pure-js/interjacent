@@ -1,0 +1,13 @@
+
+if label
+  label.forms__label.forms__label-typography
+    //- Print label for field
+    = label.value
+    //- Check requred field to fill and if it's true - add red star
+    if label.required
+      if label.filled
+        span.forms__label-required *
+      else
+        span.forms__label-required.forms__label-required_error *
+          //- (ng-class= "{ 'forms__label-required_error': form.name.$invalid }") *
+  - label = {}

@@ -1,0 +1,12 @@
+if val.array
+  each text, index in val.array
+    if val.added
+      - var added = 'forms__text-list'
+    else
+      - var added = ''
+
+    div(class= added)
+      p.forms__text.forms__text-typography(class= val.fieldClass)= text
+
+      if val.added
+        a.forms__text_remove(href= '#')

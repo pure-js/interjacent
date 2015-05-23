@@ -1,0 +1,43 @@
+.container
+  width (940px + 30px)
+  margin 0 auto
+  padding 0 15px
+  box-sizing border-box
+
+
+grid__row(indent)
+  margin 0 indent
+  &:after
+    content " "
+    clear both
+    display table
+
+grid__col(indent, amount, prefix)
+  for num in (1..amount)
+    .col-{prefix}-{num}
+      width (100% / amount * num)
+      padding 0 indent
+      float left
+      box-sizing border-box
+      min-height 1px
+      position relative
+
+
+.row
+  grid__row(-15px)
+
+
+.row_inner
+  grid__row(0)
+
+
+/* 16 column grid system */
+grid__col(15px, 16, alt)
+
+// 12 column grid system
+grid__col(15px, 12, md)
+
+// Offsets
+for num in (1..16)
+  .col-alt-offset-{num}
+    margin: 0 0 0 100% / 16 * num

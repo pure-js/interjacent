@@ -1,0 +1,13 @@
+if arrayData
+  each val, index in arrayData
+    .attached-file.attached-file_custom
+      a.attached-file__text.link-default.link-default_underline(href= '#')= val
+      button.attached-file__close-button.button
+        i.attached-file__close-icon.icon.icon-close
+
+if val.content
+  a.form-line__upload.link-default(href= '#')= val.content
+else
+  a.form-line__upload.link-default(href= '#') Загрузить протокол разногласий
+
+p.message__hint.message__hint-typography.last-element Подходят файлы Word, Excel, JPG, PNG и PDF размером до 3 мб

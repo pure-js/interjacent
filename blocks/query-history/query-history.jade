@@ -1,0 +1,28 @@
+
+
+.query-history
+	h3.query-history__heading.block_h3 История запросов
+
+	if queryHistories
+
+		each query in queryHistories
+			.query-history__line
+				.query-history__date= query.date
+				a.query-history__text(href= '#')= query.text
+				i.query-history__icon.icon.icon-attach
+				i.query-history__icon.icon(class= query.icon)
+
+
+		each modal in queryHistoryPopup
+			.query-history-popup
+				h4.query-history-popup__heading.block_h4
+					= modal.heading
+					span.query-history-popup__date= modal.date
+				.query-history-popup__description= modal.description
+				i.query-history-popup__icon.icon(class= modal.icon)
+				p.query-history-popup__status
+					= modal.status
+					a.query-history-popup__link(href= '#')= modal.link
+
+	else
+		p.query-history__empty Запросов пока не было. Чтобы создать запрос, воспользуйтесь одной из ссылок выше.

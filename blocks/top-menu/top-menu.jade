@@ -1,0 +1,4 @@
+nav.top-menu
+  - var topMenu = [ 'Компания', 'Услуги и цены', 'Документы', 'Инструменты', 'Новости' ]
+  each val in topMenu
+    a.top-menu__item.top-menu__item-typography(href= '#')= val

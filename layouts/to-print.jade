@@ -1,0 +1,19 @@
+doctype html
+html
+
+	//- Head, include stylesheets, fonts, charset and etc.
+	include /bem-blocks/head/head-to-print
+
+	body
+
+		//- Header
+		header
+			include /bem-blocks/header/axshare-nav
+			include /bower_components/axshare-nav/jade/nav-constructor
+
+		main
+			.proxy-print
+				block to-print
+					include /bem-blocks/proxy-to-print/proxy-to-print
+
+				block content

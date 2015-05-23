@@ -1,0 +1,17 @@
+if panels
+  each panel, panelIndex in panels
+    .panel(class= panel.cssClass)
+      if panel.icon
+        i.panel__icon.icon.icon-blank(class= panel.icon)
+      if panel.value
+        p.panel__content
+          each panelspan in panel.value
+            if panelspan.url
+              a.panel__url(class= panelspan.urlClass, href= '#')= panelspan.url
+            else
+              span.panel__text(class= panelspan.txtClass)= panelspan.text
+
+      if panel.date
+        p.panel__date= panel.date
+
+  - panels = []

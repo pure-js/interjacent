@@ -1,0 +1,38 @@
+doctype html
+html(ng-app= 'dellin')
+
+  block head
+
+  body.help-center
+
+    //- Header
+    include ../bem-blocks/header/header
+
+    main.main
+      .container
+
+        //- Breadcrumbs
+        block breadcrumbs
+          include ../bem-blocks/breadcrumbs/breadcrumbs
+
+        .row
+          .col-alt-11
+
+            //- Heading
+            block heading
+              include ../bem-blocks/headings/page-title
+
+            //- Main content
+            block content
+
+            //- Forms
+            block forms
+              include /bower_components/dellin-forms/forms
+
+
+          .col-alt-5
+            block aside
+
+
+    //- Footer
+    include ../bem-blocks/footer/footer

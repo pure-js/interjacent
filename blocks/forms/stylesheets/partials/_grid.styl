@@ -1,0 +1,39 @@
+// 24 column grid
+
+.forms-row
+  margin: 0 -5px
+  position: relative
+
+  &:after
+    content: ""
+    clear: both
+    display: table
+
+
+for num in (1..24)
+  .forms-col-{num}
+    float: left
+    width: (100% / 24 * num)
+    padding: 0 5px
+    box-sizing: border-box
+    min-height: 1px
+    position: relative
+
+
+.forms-label-row
+  margin 0 -10px
+
+  &:after
+    content ""
+    clear both
+    display table
+
+
+for num in (1..16)
+  .forms-label-col-{num}
+    float: left
+    width: (100% / 16 * num)
+    padding: 0 10px
+    box-sizing: border-box
+    min-height: 1px
+    position: relative

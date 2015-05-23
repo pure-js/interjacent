@@ -1,0 +1,7 @@
+
+if val.postfix
+  each hint, indexHint in val.postfix
+    p.forms__hint.forms__hint-typography(class= val.postfixClass )
+      span= hint.value
+      if hint.url
+        a.forms__hint_link-typography(href= '#')= hint.url

@@ -1,0 +1,23 @@
+
+if inputs
+  if !inputs.array
+    - inputs.array = ['']
+
+  each input, inputIndex in inputs.array
+    .inputs__wrapper(class= inputs.fieldWrapperClass)
+      if inputs.disabled
+        - var attributes = { disabled: 'disabled' }
+      else if inputs.test
+        - var attributes =  { 'name': 'name', 'ng-model' : 'user.name', required: true }
+      else
+        - var attributes = {}
+
+      input.input-type-text.forms__input-typography(type= 'text', class= inputs.fieldClass, placeholder= inputs.placeholder, value= input)&attributes( attributes )
+
+      - var inputLength = input.length
+      if inputIndex < inputLength - 1
+        //- Check added flag
+        if inputs.added
+          button.forms__input_remove(type= 'button')
+
+  - inputs = []

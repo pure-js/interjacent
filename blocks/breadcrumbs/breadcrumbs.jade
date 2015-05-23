@@ -1,0 +1,8 @@
+
+if breadcrumbs
+  ul.breadcrumbs
+    each val in breadcrumbs.path
+      li.breadcrumbs__item
+        a.breadcrumbs__link-typography(href= '#')= val
+
+    li.breadcrumbs__item.breadcrumbs__text-typography= breadcrumbs.title

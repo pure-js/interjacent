@@ -1,0 +1,8 @@
+
+if checkboxes
+  each checkbox, checkboxIndex in checkboxes.array
+    label.forms__checkbox-label.forms__checkbox-label-typography
+      input.forms__checkbox(type= 'checkbox', name= inputName, checked= checkbox.checked)
+      = checkbox.label
+
+  - checkboxes = {}

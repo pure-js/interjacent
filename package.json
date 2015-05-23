@@ -1,0 +1,19 @@
+{
+  "name": "dellin-pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://git.dellin.ru/dellin-front-end-framework/dellin-pages.git"
+  },
+  "author": "track",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp.spritesmith": "^3.5.4"
+  }
+}

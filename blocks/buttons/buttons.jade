@@ -1,0 +1,12 @@
+
+if buttons
+  each button, buttonIndex in buttons
+    if button.url
+      a.block-button.block-button_default.block-button_default-typography(href= button.url, class= button.cssClass)= button.value
+    else
+      if button.disabled
+        button.block-button.block-button_typography(type= 'submit', class= button.cssClass, disabled)= button.value
+      else
+        button.block-button.block-button_typography(type= 'submit', class= button.cssClass)= button.value
+
+  - buttons = []
