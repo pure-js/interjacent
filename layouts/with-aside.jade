@@ -6,28 +6,28 @@ html(ng-app= 'dellin')
   body.help-center
 
     //- Header
-    include ../bem-blocks/header/header
+    include ../blocks/header/header
 
     main.main
       .container
 
         //- Breadcrumbs
         block breadcrumbs
-          include ../bem-blocks/breadcrumbs/breadcrumbs
+          include ../blocks/breadcrumbs/breadcrumbs
 
         .row
           .col-alt-11
 
             //- Heading
             block heading
-              include ../bem-blocks/headings/page-title
+              include ../blocks/headings/page-title
 
             //- Main content
             block content
 
             //- Forms
             block forms
-              include /bower_components/dellin-forms/forms
+              include ../blocks/forms/forms
 
 
           .col-alt-5
