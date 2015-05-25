@@ -1,6 +1,6 @@
 {
   "name": "interjacent",
-  "version": "0.0.1",
+  "version": "v0.0.2",
   "description": "",
   "main": "README.md",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "interjacent-website.com"
+    "url": "https://github.com/IamEmpty/interjacent"
   },
   "author": "IamEmpty",
   "license": "ISC",

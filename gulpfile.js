@@ -10,7 +10,7 @@ var paths = {
 };
 
 
-// Create common sprite for dellin pages
+// Create sprite
 gulp.task( 'sprite', function() {
 
   var spriteData =
@@ -24,7 +24,7 @@ gulp.task( 'sprite', function() {
       }));
 
   spriteData.img.pipe(gulp.dest( 'static/img/sprites' ));   // path for images
-  spriteData.css.pipe(gulp.dest( 'stylesheets/partials' ));   // path for stylesheets
+  spriteData.css.pipe(gulp.dest( 'stylesheets/partials' )); // path for stylesheets
 });
 
 
