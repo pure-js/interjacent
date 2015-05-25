@@ -22,5 +22,9 @@
   "keywords": [
     "jade",
     "stylus"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IamEmpty/interjacent.git"
+  }
 }
