@@ -1,77 +1,78 @@
-
 if forms
   form(novalidate, name= 'form', ng-controller= 'forms')
-    each formBlock, formBlockIndex in forms.elements
-      .form-block(class= formBlock.cssClass)
 
-        each line in formBlock.children
-          .form-line(class = line.lineClass)
-            .forms-label-row
-              if !forms.grid
-                - forms.grid = []
-                  - forms.grid[0] = 'forms-label-col-6'
-                  - forms.grid[1] = 'forms-label-col-10'
+    if forms.elements
+      each formBlock, formBlockIndex in forms.elements
+        .form-block(class= formBlock.cssClass)
 
-              div(class= forms.grid[0])
-                - label = line.label
-                include _label/label
+          each line in formBlock.children
+            .form-line(class = line.lineClass)
+              .forms-label-row
+                if !forms.grid
+                  - forms.grid = []
+                    - forms.grid[0] = 'forms-label-col-6'
+                    - forms.grid[1] = 'forms-label-col-10'
 
-              div(class= forms.grid[1])
-                .forms-row
-                  each val, index in line.items
+                div(class= forms.grid[0])
+                  - label = line.label
+                  include _label/label
 
-                    if !val.grid
-                      - val.grid = 'forms-col-14'
+                div(class= forms.grid[1])
+                  .forms-row
+                    each val, index in line.items
 
-                    div(class= val.grid)
+                      if !val.grid
+                        - val.grid = 'forms-col-14'
 
-                      - var radioIndex = index
-                      - var inputName = val.field + '_' + Math.floor((Math.random() * 10000) + 1) + '-' + Math.floor((Math.random() * 10000) + 1)
+                      div(class= val.grid)
 
-                      //- Switch for different types of fields
+                        - var radioIndex = index
+                        - var inputName = val.field + '_' + Math.floor((Math.random() * 10000) + 1) + '-' + Math.floor((Math.random() * 10000) + 1)
 
-                      case val.field
-                        when 'datetime'
-                          include _date/datetime
+                        //- Switch for different types of fields
 
-                        when 'radio'
-                          - radioButtons = val
-                          include _radio-buttons/radio-buttons
+                        case val.field
+                          when 'datetime'
+                            include _date/datetime
 
-                        when 'tab-buttons'
-                          - tabButtons = val
-                          include _tab-buttons/tab-buttons
+                          when 'radio'
+                            - radioButtons = val
+                            include _radio-buttons/radio-buttons
 
-                        when 'upload'
-                          include _upload/upload
+                          when 'tab-buttons'
+                            - tabButtons = val
+                            include _tab-buttons/tab-buttons
 
-                        when 'input'
-                          - inputs = val
-                          include _inputs/inputs
+                          when 'upload'
+                            include _upload/upload
 
-                        when 'textarea'
-                          include _textarea/textarea
+                          when 'input'
+                            - inputs = val
+                            include _inputs/inputs
 
-                        when 'select'
-                          - select = val
-                          include _select/select
+                          when 'textarea'
+                            include _textarea/textarea
 
-                        when 'plain-text'
-                          include _plain-text/plain-text
+                          when 'select'
+                            - select = val
+                            include _select/select
 
-                        when 'link'
-                          - links = val
-                          include _link/link
+                          when 'plain-text'
+                            include _plain-text/plain-text
 
-                        when 'checkbox'
-                          - checkboxes = val
-                          include _checkbox/checkbox
+                          when 'link'
+                            - links = val
+                            include _link/link
 
-                        default
-                          p.form-line__paragraph.text-easy text
+                          when 'checkbox'
+                            - checkboxes = val
+                            include _checkbox/checkbox
+
+                          default
+                            p.form-line__paragraph.text-easy text
 
 
-                      include _postfix/postfix
+                        include _postfix/postfix
 
 
     include _info/info

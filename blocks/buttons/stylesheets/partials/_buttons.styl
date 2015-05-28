@@ -1,19 +1,16 @@
 block-button-reset()
-  display: inline-block
-  border: none
-  background: transparent
-  outline: none
-  line-height: normal
-
+  display inline-block
+  border none
+  background transparent
+  outline none
+  line-height normal
   &:focus
-    outline: none
-
+    outline none
 
 block-button_disabled()
-  border: 1px solid #DEDEDE
-  background: #EDEDED
-  color: #C1C1C1
-
+  border 1px solid #DEDEDE
+  background #EDEDED
+  color #C1C1C1
 
 .block-button
   block-button-reset()
@@ -21,34 +18,25 @@ block-button_disabled()
   line-height 19px
   border 1px solid transparent
 
-
 .block-button_default
   border 1px solid #B3B3B3
   background  #BDC3C6
-
   &:hover
     background #C6CBCE
-
   &:disabled
     block-button_disabled()
-
   &:active
     background  #BDC3C6
 
-
 .block-button_primary
   border 1px solid #F8A304
-  background  #FAAC18
-
+  background #FAAC18
   &:hover
     background #FCBD54
-
   &:disabled
     block-button_disabled()
-
   &:active
-    background  #FAAC18
-
+    background #FAAC18
 
 .block-button_with-siblings
   &:first-child
@@ -58,4 +46,5 @@ block-button_disabled()
   &:only-child
     margin 0
 
-
+.block-button-centralize
+  text-align center
