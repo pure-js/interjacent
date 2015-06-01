@@ -1,0 +1,17 @@
+if asideIconsMenu
+  ul.aside-icons-menu
+    if asideIconsMenu.items
+      each item in asideIconsMenu.items
+        li.aside-icons-menu__item
+          if item.type == 'link'
+            a.aside-icons-menu__link(href= '#')= item.value
+          else
+            p.aside-icons-menu__text= item.value
+
+          if item.childs
+            ul.aside-icons-menu_second-level
+              each subitem in item.childs
+                if subitem.type == 'link'
+                  a.aside-icons-menu__link(href= '#')= subitem.value
+                else
+                  p.aside-icons-menu__text= subitem.value
