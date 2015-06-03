@@ -1,19 +1,16 @@
-
 .header-grid-row
   margin 0 -10px
-
   &:after
-    content: " "
-    clear: both
-    display: table
-
+    content " "
+    clear both
+    display table
 
 /* 36 Column grid */
 for num in (1..60)
   .header-grid-col-{num}
-    float: left
-    width: (100% / 60 * num)
-    padding: 0 10px
-    box-sizing: border-box
-    min-height: 1px
-    position: relative
+    float left
+    width (100% / 60 * num)
+    padding 0 10px
+    box-sizing border-box
+    min-height 1px
+    position relative
