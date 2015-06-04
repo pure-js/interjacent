@@ -1,4 +1,4 @@
-block-button-reset()
+button-reset()
   display inline-block
   border none
   background transparent
@@ -7,38 +7,38 @@ block-button-reset()
   &:focus
     outline none
 
-block-button_disabled()
+button_disabled()
   border 1px solid #DEDEDE
   background #EDEDED
   color #C1C1C1
 
-.block-button
-  block-button-reset()
+.button
+  button-reset()
   padding 5px 35px
   line-height 19px
   border 1px solid transparent
 
-.block-button_default
+.button_default
   border 1px solid #B3B3B3
-  background  #BDC3C6
+  background #BDC3C6
   &:hover
     background #C6CBCE
   &:disabled
-    block-button_disabled()
+    button_disabled()
   &:active
-    background  #BDC3C6
+    background #BDC3C6
 
-.block-button_primary
+.button_primary
   border 1px solid #F8A304
   background #FAAC18
   &:hover
     background #FCBD54
   &:disabled
-    block-button_disabled()
+    button_disabled()
   &:active
     background #FAAC18
 
-.block-button_with-siblings
+.button_with-siblings
   &:first-child
     margin 0 16px 0 0
   &:last-child
@@ -46,5 +46,5 @@ block-button_disabled()
   &:only-child
     margin 0
 
-.block-button-centralize
+.button-centralize
   text-align center
