@@ -8,3 +8,5 @@ Just and one front-end framework named interjacent
 ## Using
 
     @import 'bower_components/stylesheets/interjacent.styl'
+
+And you should define stylus variable ```path-to-sprite```
