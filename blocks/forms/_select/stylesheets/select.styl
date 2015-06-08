@@ -13,6 +13,19 @@
   border 1px solid #d20b0b
   color #d20b0b
   background #ffbfbf
+  &::-webkit-input-placeholder /* WebKit browsers */
+    color #d20b0b
+  &:-moz-placeholder /* Mozilla Firefox 4 to 18 */
+    color #d20b0b
+    opacity 1
+  &::-moz-placeholder /* Mozilla Firefox 19+ */
+    color: #d20b0b
+    opacity 1
+  &:-ms-input-placeholder /* Internet Explorer 10+ */
+    color #d20b0b
+  &:focus
+    border 1px solid #d20b0b
+    box-shadow 0 1px 1px rgba(0, 0, 0, .075) inset, 0 0 6px #D59392
 
 .select__option
   -webkit-appearance none
