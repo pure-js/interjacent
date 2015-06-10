@@ -1,13 +1,13 @@
 if popup
   if popup.show
     - var overlayHide = 'overlay_enabled'
-    - var modalShow = 'block-modal-window_opened'
+    - var modalShow = 'popup_opened'
   else
     - var overlayHide = ''
     - var modalShow =  ''
   .overlay(class= overlayHide)
-  .block-modal-window(class= popup.cssClass + ' ' + modalShow)
-    h3.block-modal-window__heading.block-modal-window__heading-typography= popup.heading
-    button.button-reset.modal-window__close ×
+  .popup(class= popup.cssClass + ' ' + modalShow)
+    h3.popup__heading(class= popup.heading.cssClass)= popup.heading.value
+    button.button-reset.popup__close ×
 
     block popup-content
