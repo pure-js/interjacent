@@ -79,7 +79,7 @@ if forms
     include _agree/agree
 
     //- Add send button
-    .forms__button
+    .forms__button(class= forms.buttonsClass)
       - var buttons = forms.buttons
       include ../buttons/buttons
 
