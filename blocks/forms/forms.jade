@@ -7,75 +7,77 @@ if forms
 
           each line in formBlock.children
             .form-line(class = line.lineClass)
-              .forms-label-row
-                if !forms.grid
-                  - forms.grid = []
-                    - forms.grid[0] = 'forms-label-col-6'
-                    - forms.grid[1] = 'forms-label-col-10'
+              if !line.full
+                .forms-label-row
+                  if !forms.grid
+                    - forms.grid = []
+                      - forms.grid[0] = 'forms-label-col-6'
+                      - forms.grid[1] = 'forms-label-col-10'
 
-                div(class= forms.grid[0])
-                  - label = line.label
-                  include _label/label
+                  div(class= forms.grid[0])
+                    - label = line.label
+                    include _label/label
 
-                div(class= forms.grid[1])
-                  .forms-row
-                    each val, index in line.items
+                  div(class= forms.grid[1])
+                    .forms-row
+                      each val, index in line.items
 
-                      if !val.grid
-                        - val.grid = 'forms-col-14'
+                        if !val.grid
+                          - val.grid = 'forms-col-14'
 
-                      div(class= val.grid)
+                        div(class= val.grid)
 
-                        - var radioIndex = index
-                        - var inputName = val.field + '_' + Math.floor((Math.random() * 10000) + 1) + '-' + Math.floor((Math.random() * 10000) + 1)
+                          - var radioIndex = index
+                          - var inputName = val.field + '_' + Math.floor((Math.random() * 10000) + 1) + '-' + Math.floor((Math.random() * 10000) + 1)
 
-                        //- Switch for different types of fields
+                          //- Switch for different types of fields
 
-                        case val.field
-                          when 'datetime'
-                            include _date/datetime
+                          case val.field
+                            when 'datetime'
+                              include _date/datetime
 
-                          when 'radio'
-                            - radioButtons = val
-                            include _radio-buttons/radio-buttons
+                            when 'radio'
+                              - radioButtons = val
+                              include _radio-buttons/radio-buttons
 
-                          when 'tab-buttons'
-                            - tabButtons = val
-                            include _tab-buttons/tab-buttons
+                            when 'tab-buttons'
+                              - tabButtons = val
+                              include _tab-buttons/tab-buttons
 
-                          when 'upload'
-                            include _upload/upload
+                            when 'upload'
+                              include _upload/upload
 
-                          when 'input'
-                            - inputs = val
-                            include _inputs/inputs
+                            when 'input'
+                              - inputs = val
+                              include _inputs/inputs
 
-                          when 'textarea'
-                            include _textarea/textarea
+                            when 'textarea'
+                              include _textarea/textarea
 
-                          when 'select'
-                            - select = val
-                            include _select/select
+                            when 'select'
+                              - select = val
+                              include _select/select
 
-                          when 'plain-text'
-                            include _plain-text/plain-text
+                            when 'plain-text'
+                              include _plain-text/plain-text
 
-                          when 'link'
-                            - links = val
-                            include _link/link
+                            when 'link'
+                              - links = val
+                              include _link/link
 
-                          when 'checkbox'
-                            - checkboxes = val
-                            include _checkbox/checkbox
+                            when 'checkbox'
+                              - checkboxes = val
+                              include _checkbox/checkbox
 
-                          default
-                            p.form-line__paragraph.text-easy text
+                            default
+                              p.form-line__paragraph.text-easy text
 
 
-                        include _postfix/postfix
+                          include _postfix/postfix
+              else
+                //- Full width block
+                include _full-width/full-width
 
-    //- Full width block
-    include _full-width/full-width
 
     //- Add send button
     .forms__button(class= forms.buttonsClass)

@@ -1,18 +1,18 @@
-if forms.info
-  .form-block
-    .form-line.forms__info.forms-info
-      i.forms-info__icon.icon.icon-info
-      p.forms-info__text= forms.info.text
-
-if forms.agree
-  .form-block
-    .form-line.forms__agree.forms-agree
+if line.full
+  if line.items
+    each fullItem in line.items
       input.forms-agree__checkbox(type= 'checkbox')
-      p.forms-agree__text= forms.agree.text
+      //- p.forms-agree__text= forms.agree.text
 
 
-if forms.fullwidth
-  .form-block
-    .form-line.forms__agree.forms-agree
-      input.forms-agree__checkbox(type= 'checkbox')
-      p.forms-agree__text= forms.agree.text
+//- if forms.info
+//-   .form-block
+//-     .form-line.forms__info.forms-info
+//-       i.forms-info__icon.icon.icon-info
+//-       p.forms-info__text= forms.info.text
+
+//- if forms.agree
+//-   .form-block
+//-     .form-line.forms__agree.forms-agree
+//-       input.forms-agree__checkbox(type= 'checkbox')
+//-       p.forms-agree__text= forms.agree.text
