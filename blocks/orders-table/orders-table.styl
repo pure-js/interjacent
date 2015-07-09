@@ -1,2 +1,20 @@
 .orders-table__row
-  border 1px solid black
+  position relative
+  border-top 3px solid #eeeeee
+  padding 17px 0
+  &:hover
+    border-top 3px solid #C6E6FD
+    background #F3F8FC
+    & + .orders-table__row
+      border-top 3px solid #C6E6FD
+  &:first-child
+    border-top none
+
+.row-for-10
+  grid__row(-10px)
+
+
+grid__col(10px, 60, '.orders-table__col')
+
+.orders-table__status
+  font-size 12px
