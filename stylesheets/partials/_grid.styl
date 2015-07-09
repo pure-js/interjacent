@@ -35,7 +35,13 @@ grid__col(15px, 16, '.col-alt')
 // 12 column grid system
 grid__col(15px, 12, '.col-md')
 
+// 60 column grid system
+grid__col(10px, 60, '.sixty__col')
+
 // Offsets
 for num in (1..16)
   .col-alt-offset-{num}
     margin 0 0 0 100% / 16 * num
+
+.row-for-10
+  grid__row(-10px)
