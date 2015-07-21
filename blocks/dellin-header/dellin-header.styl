@@ -1,13 +1,17 @@
-.header-grid-row
+.header-row
   margin 0 -10px
+  &:before
+    content ""
+    clear both
+    display table
   &:after
-    content " "
+    content ""
     clear both
     display table
 
 /* 36 Column grid */
 for num in (1..60)
-  .header-grid-col-{num}
+  .header-col-{num}
     float left
     width (100% / 60 * num)
     padding 0 10px
@@ -30,6 +34,9 @@ for num in (1..60)
 
 .header__phone
   color #ffffff
+  font-size 20px
+  text-align right
+  margin 25px 0 0 0
 
 .header__city
   color #ffffff
