@@ -22,7 +22,6 @@ for num in (1..60)
 
 .header-wrapper
   background #0D0D0D
-  overflow hidden
   margin 0 0 270px 0
 
 .header__bottom
@@ -38,6 +37,18 @@ for num in (1..60)
   font-size 20px
   text-align right
   margin 25px 0 0 0
+  display block
+  background transparent
+  outline none
+  border none
+  float right
+  border-bottom 1px dashed white
+  padding 0
+  &:after
+    position absolute
+    content '▼'
+    font-size 12px
+    margin 7px 0 0 2px
 
 .header__city
   color #ffffff
@@ -46,7 +57,7 @@ for num in (1..60)
   display block
   overflow hidden
   float right
-  margin 6px 0 0 0
+  margin 5px 0 0 0
 
 .header-nav__item
   display block
@@ -62,3 +73,46 @@ for num in (1..60)
     margin 0 8px 0 0
   &:last-child
     margin 0 0 0 8px
+
+
+.call-us
+  background #fff
+  border 1px solid #ccc
+  position absolute
+  width 427px
+  box-sizing border-box
+  top 64px
+  right 10px
+  padding 0 27px
+
+.call-us__heading
+  font-size 20px
+  color #333333
+  margin 18px 0 19px 0
+
+.call-us-region
+  margin 24px 0 0 0
+  &:first-child
+    margin 0
+
+.call-us-region__from
+  font-size 14px
+  font-weight 700
+  color #333333
+
+.call-us-region__phone
+  font-size 14px
+  color #333333
+  margin 9px 0 0 0
+
+.call-us__recall
+  font-size 14px
+  color #333333
+  display block
+
+.call-us__call-online
+  font-size 14px
+  color #333333
+  display inline-block
+  text-decoration none
+  border-bottom 1px dashed #333333
