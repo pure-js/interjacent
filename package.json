@@ -11,9 +11,9 @@
     "url": "https://github.com/IamEmpty/interjacent"
   },
   "author": "IamEmpty",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp.spritesmith": "^6.0.0"
+    "gulp.spritesmith": "^6.0.1"
   }
 }
