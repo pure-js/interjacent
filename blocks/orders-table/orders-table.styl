@@ -1,0 +1,81 @@
+.orders-table__row
+  position relative
+  border-top 3px solid #eeeeee
+  padding 17px 0
+  &:hover
+    border-top 3px solid #C6E6FD
+    background #F3F8FC
+    & + .orders-table__row
+      border-top 3px solid #C6E6FD
+  &:first-child
+    border-top none
+
+orders-table-text()
+  color #1F1F1F
+  font-size 12px
+
+.orders-table__price
+  orders-table-text()
+  margin 0
+  text-align right
+
+.orders-table__payment-status
+  orders-table-text()
+  text-align right
+  margin 0
+
+.orders-table__payment-status_sucess
+  color #00B22C
+
+.orders-table__payment-status_error
+  color #990000
+
+.orders-table__status
+  orders-table-text()
+  text-align right
+  margin 0
+
+.orders-table__sender
+  orders-table-text()
+  margin 0
+
+.orders-table__recipient
+  orders-table-text()
+  margin 0
+
+.orders-table__from
+  orders-table-text()
+  margin 0
+
+.orders-table__to
+  orders-table-text()
+  margin 0
+
+.orders-table__order-delivery
+  font-size 12px
+  color #2685D1
+  margin 0
+
+.orders-table__number
+  float left
+  font-weight bold
+  font-size 14px
+  color #1F1F1F
+  margin 0 5px 0 0
+
+.orders-table__date
+  margin 0
+  font-size 12px
+  color #777777
+  margin 2px 0 0 5px
+
+.orders-table__note
+  color #777777
+  border-bottom 1px dotted #777777
+  font-style italic
+  text-decoration none
+  font-size 12px
+
+.orders-table__options
+  orders-table-text()
+  margin 0

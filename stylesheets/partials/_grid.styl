@@ -13,7 +13,7 @@ grid__row(indent)
 
 grid__col(indent, amount, prefix)
   for num in (1..amount)
-    .col-{prefix}-{num}
+    {prefix}-{num}
       width (100% / amount * num)
       padding 0 indent
       float left
@@ -30,12 +30,18 @@ grid__col(indent, amount, prefix)
 
 
 /* 16 column grid system */
-grid__col(15px, 16, alt)
+grid__col(15px, 16, '.col-alt')
 
 // 12 column grid system
-grid__col(15px, 12, md)
+grid__col(15px, 12, '.col-md')
+
+// 60 column grid system
+grid__col(10px, 60, '.sixty__col')
 
 // Offsets
 for num in (1..16)
   .col-alt-offset-{num}
     margin 0 0 0 100% / 16 * num
+
+.row-for-10
+  grid__row(-10px)

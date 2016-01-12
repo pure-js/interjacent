@@ -1,7 +1,7 @@
 {
   "name": "interjacent",
-  "version": "v0.0.4",
-  "description": "",
+  "version": "v0.0.5",
+  "description": "interjacent front-end framework",
   "main": "README.md",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

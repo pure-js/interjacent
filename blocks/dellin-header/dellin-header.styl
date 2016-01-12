@@ -1,0 +1,138 @@
+.header-row
+  margin 0 -10px
+  &:before
+    content ""
+    clear both
+    display table
+  &:after
+    content ""
+    clear both
+    display table
+
+/* 36 Column grid */
+for num in (1..60)
+  .header-col-{num}
+    float left
+    width (100% / 60 * num)
+    padding 0 10px
+    box-sizing border-box
+    min-height 1px
+    position relative
+
+
+.header-wrapper
+  background #0D0D0D
+  margin 0 0 270px 0
+
+.header__bottom
+  background #1e1e1e
+  border-top 1px solid #FAAC18
+
+.header__logotype
+  margin 26px 0 39px
+  display block
+
+.header__phone
+  color #ffffff
+  font-size 20px
+  text-align right
+  margin 25px 0 0 0
+  display block
+  background transparent
+  outline none
+  border none
+  float right
+  border-bottom 1px dashed white
+  padding 0
+  &:after
+    position absolute
+    content '▼'
+    font-size 12px
+    margin 7px 0 0 2px
+
+.header__city
+  color #ffffff
+
+.header-nav
+  display block
+  overflow hidden
+  float right
+  margin 5px 0 0 0
+
+.header-nav__item
+  display block
+  float left
+  color #BABABA
+  text-align right
+  font-size 13px
+  margin 0 8px
+  text-decoration none
+  border-bottom 1px solid #BABABA
+  padding 0 0 1px 0
+  &:first-child
+    margin 0 8px 0 0
+  &:last-child
+    margin 0 0 0 8px
+
+
+.call-us
+  background #fff
+  border 1px solid #ccc
+  position absolute
+  width 427px
+  box-sizing border-box
+  top 64px
+  right 10px
+  padding 0 27px
+  &:before
+    content '▲'
+    position absolute
+    color #fff
+    top -14px
+    right 64px
+    transform scale(2,1)
+
+
+.call-us__heading
+  font-size 20px
+  color #333333
+  margin 18px 0 19px 0
+
+.call-us-region
+  margin 24px 0 0 0
+  &:first-child
+    margin 0
+
+.call-us-region__from
+  font-size 14px
+  font-weight 700
+  color #333333
+  margin 0 0 9px 0
+
+.call-us-region__phone
+  font-size 14px
+  color #333333
+  margin 0 0 14px 18px
+  &:last-child
+    margin 0 0 0 19px
+
+.call-us__links
+  margin-top 13px
+  margin-bottom 26px
+
+.call-us__icon
+  position absolute
+  margin 0 6px 0 0
+
+.call-us-links__item
+  margin 0 0 0 18px
+  font-size 14px
+  line-height 1
+  color #333333
+  display inline-block
+  text-decoration none
+  border-bottom 1px solid #333333
+  margin 0 0 0 19px
+
+.call-us-links__item_dashed
+  border-bottom 1px dashed #333333
