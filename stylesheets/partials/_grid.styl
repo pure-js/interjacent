@@ -1,17 +1,19 @@
+default-padding = 15px
+
 .container
-  width (940px + 30px)
+  width (940px + (15px * 2))
   margin 0 auto
   padding 0 15px
   box-sizing border-box
 
-grid__row(indent)
+generate-rows(indent)
   margin 0 indent
   &:after
     content " "
     clear both
     display table
 
-grid__col(indent, amount, prefix)
+generate-cols(indent, amount, prefix)
   for num in (1..amount)
     {prefix}-{num}
       width (100% / amount * num)
@@ -23,20 +25,20 @@ grid__col(indent, amount, prefix)
 
 
 .row
-  grid__row(-15px)
+  generate-rows(-15px)
 
 .row_inner
-  grid__row(0)
+  generate-rows(0)
 
 
 /* 16 column grid system */
-grid__col(15px, 16, '.col-alt')
+generate-cols(default-padding, 16, '.col-alt')
 
 // 12 column grid system
-grid__col(15px, 12, '.col-md')
+generate-cols(default-padding, 12, '.col-md')
 
 // 60 column grid system
-grid__col(10px, 60, '.sixty__col')
+generate-cols(10px, 60, '.sixty__col')
 
 // Offsets
 for num in (1..16)
@@ -44,4 +46,4 @@ for num in (1..16)
     margin 0 0 0 100% / 16 * num
 
 .row-for-10
-  grid__row(-10px)
+  generate-rows(-10px)
