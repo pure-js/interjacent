@@ -1,22 +1,16 @@
-button-reset()
-  display inline-block
-  border none
-  background transparent
-  outline none
-  line-height normal
-  &:focus
-    outline none
-
 button_disabled()
   border 1px solid #DEDEDE
   background #EDEDED
   color #C1C1C1
 
 .button
-  button-reset()
+  display inline-block
+  background transparent
   padding 5px 35px
   line-height 19px
   border 1px solid transparent
+  &:focus
+    outline none
 
 .button_default
   border 1px solid #B3B3B3

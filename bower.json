@@ -15,7 +15,7 @@
   "main": "README.md",
   "license": "MIT",
   "dependencies": {
-    "normalize.css": "~3.0.3"
+    "normalize-css": "normalize.css#~3.0.3"
   },
   "homepage": "https://github.com/IamEmpty/interjacent",
   "keywords": [
