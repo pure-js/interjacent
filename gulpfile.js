@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
   spritesmith = require('gulp.spritesmith'),
+  stylus = require('gulp-stylus'),
   merge = require('merge-stream');
 
 
@@ -7,9 +8,16 @@ var paths = {
   sprite: [
     '../dellin-forms/_date/img/calendar.png',
     'static/img/icons-source/**/*.png'
-  ]
+  ],
+  stylus: 'stylesheets/interjacent.styl',
+  dist: 'dist/'
 };
 
+gulp.task( 'css', function() {
+  return gulp.src( paths.stylus )
+    .pipe(stylus())
+    .pipe(gulp.dest(paths.dist + 'css'));
+});
 
 gulp.task( 'sprite', function() {
   // Generate our spritesheet
@@ -32,4 +40,4 @@ gulp.task( 'sprite', function() {
 });
 
 
-gulp.task( 'default', [ 'sprite' ] );
+gulp.task( 'default', [ 'sprite', 'css' ] );

@@ -1,4 +1,6 @@
 // path-to-sprite = '/img/sprites/icon-sprite.png'
+$light-gray = #d3d3d3
+$vivid-orange = #ffa500
 
 sprite($sprite) {
   background url(path-to-sprite)
@@ -35,7 +37,7 @@ sprites($spritesheet_sprites)
 
 .icon-close
   &:after
-    content: "×"
+    content "×"
     color $light-gray
     font-size 22px
 
@@ -52,11 +54,3 @@ sprites($spritesheet_sprites)
     border-radius 100%
     background $vivid-orange
     margin 13px 0 0 14px
-
-// .icon-ok_with-exclamation
-//   &:before
-//     sprite($icon-exclamation-mark)
-//     display inline-block
-//     content ""
-//     position absolute
-//     margin 10px 0 0 18px

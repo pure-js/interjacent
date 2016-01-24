@@ -12,3 +12,7 @@ Just and one front-end framework named interjacent
     @import 'bower_components/stylesheets/interjacent.styl'
 
 And you should define stylus variable ```path-to-sprite```
+
+## Tests
+
+    csslint dist/css/interjacent.css
