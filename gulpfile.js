@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
   spritesmith = require('gulp.spritesmith'),
   stylus = require('gulp-stylus'),
-  merge = require('merge-stream');
+  merge = require('merge-stream'),
+  csslint = require('gulp-csslint');
 
 
 var paths = {
@@ -15,7 +16,9 @@ var paths = {
 
 gulp.task( 'css', function() {
   return gulp.src( paths.stylus )
-    .pipe(stylus())
+    .pipe(stylus({
+      'include css': true
+    }))
     .pipe(gulp.dest(paths.dist + 'css'));
 });
 
@@ -39,5 +42,10 @@ gulp.task( 'sprite', function() {
   return merge(imgStream, cssStream);
 });
 
+gulp.task( 'test', [ 'css' ], function() {
+  return gulp.src( paths.dist + 'css/interjacent.css')
+    .pipe(csslint())
+    .pipe(csslint.reporter());
+});
 
 gulp.task( 'default', [ 'sprite', 'css' ] );

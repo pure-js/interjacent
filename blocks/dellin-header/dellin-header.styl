@@ -39,11 +39,12 @@ for num in (1..60)
   margin 25px 0 0 0
   display block
   background transparent
-  outline none
   border none
   float right
   border-bottom 1px dashed white
   padding 0
+  &:focus
+    outline none
   &:after
     position absolute
     content '▼'
@@ -125,7 +126,6 @@ for num in (1..60)
   margin 0 6px 0 0
 
 .call-us-links__item
-  margin 0 0 0 18px
   font-size 14px
   line-height 1
   color #333333
