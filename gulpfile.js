@@ -1,11 +1,11 @@
-var gulp = require('gulp'),
+const gulp = require('gulp'),
   spritesmith = require('gulp.spritesmith'),
   stylus = require('gulp-stylus'),
   merge = require('merge-stream'),
   csslint = require('gulp-csslint');
 
 
-var paths = {
+const paths = {
   sprite: [
     '../dellin-forms/_date/img/calendar.png',
     'static/img/icons-source/**/*.png'
