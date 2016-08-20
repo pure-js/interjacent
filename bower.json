@@ -2,7 +2,7 @@
   "name": "interjacent",
   "version": "v0.0.5",
   "authors": [
-    "IamEmpty <dustonroad@gmail.com>"
+    "IamEmpty"
   ],
   "ignore": [
     "node_modules",
@@ -15,7 +15,8 @@
   "main": "README.md",
   "license": "MIT",
   "dependencies": {
-    "normalize-css": "normalize.css#~3.0.3"
+    "normalize-css": "~4.2.0",
+    "stylus-grid-constructor": "*"
   },
   "homepage": "https://github.com/IamEmpty/interjacent",
   "keywords": [

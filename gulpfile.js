@@ -1,9 +1,7 @@
 const gulp = require('gulp'),
   spritesmith = require('gulp.spritesmith'),
   stylus = require('gulp-stylus'),
-  merge = require('merge-stream'),
-  csslint = require('gulp-csslint');
-
+  merge = require('merge-stream');
 
 const paths = {
   sprite: [
