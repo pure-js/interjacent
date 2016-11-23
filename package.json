@@ -1,6 +1,6 @@
 {
   "name": "interjacent",
-  "version": "v0.0.5",
+  "version": "0.0.6",
   "description": "interjacent front-end framework",
   "main": "README.md",
   "scripts": {
