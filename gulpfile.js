@@ -24,7 +24,7 @@ gulp.task( 'css', function() {
 
 gulp.task( 'sprite', function() {
   // Generate our spritesheet
-  var spriteData = gulp.src( paths.sprite ) // path to images for sprite
+  let spriteData = gulp.src( paths.sprite ) // path to images for sprite
     .pipe(spritesmith({
       imgName: 'icon-sprite.png',
       cssName: '_icon-sprite.styl',
@@ -33,10 +33,10 @@ gulp.task( 'sprite', function() {
       }
     }));
 
-  var imgStream = spriteData.img
+  let imgStream = spriteData.img
     .pipe(gulp.dest( 'static/img/sprites' ));   // path for images
 
-  var cssStream = spriteData.css
+  let cssStream = spriteData.css
     .pipe(gulp.dest( 'stylesheets/partials' )); // path for stylesheets
 
   return merge(imgStream, cssStream);
