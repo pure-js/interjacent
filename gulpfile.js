@@ -43,7 +43,7 @@ gulp.task( 'sprite', function() {
 gulp.task( 'test', gulp.series('css', () =>
   gulp.src( paths.dist + 'css/interjacent.css')
     .pipe(plugins.csslint())
-    .pipe(csslint.reporter())
+    .pipe(plugins.csslint.formatter())
 ));
 
 gulp.task( 'default', gulp.parallel('sprite', 'css'));
