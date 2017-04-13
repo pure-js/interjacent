@@ -2,7 +2,7 @@
   "name": "interjacent",
   "version": "v0.0.5",
   "authors": [
-    "IamEmpty"
+    "pure-js"
   ],
   "ignore": [
     "node_modules",
@@ -15,16 +15,16 @@
   "main": "README.md",
   "license": "MIT",
   "dependencies": {
-    "normalize-css": "~4.2.0",
-    "stylus-grid-constructor": "*"
+    "normalize-css": "~6.0.0",
+    "stylus-grid-constructor": "^2.1.0"
   },
-  "homepage": "https://github.com/IamEmpty/interjacent",
+  "homepage": "https://github.com/pure-js/interjacent",
   "keywords": [
-    "jade",
+    "pug",
     "stylus"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/IamEmpty/interjacent.git"
+    "url": "git://github.com/pure-js/interjacent.git"
   }
 }
