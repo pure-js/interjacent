@@ -4,20 +4,34 @@
   "description": "interjacent front-end framework",
   "main": "README.md",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pure-js/interjacent"
+    "url": "git+https://github.com/pure-js/interjacent.git"
   },
   "author": "pure-js",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "gulpjs/gulp.git#4.0",
+    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-csslint": "^1.0.0",
     "gulp-load-plugins": "^1.4.0",
     "gulp-stylus": "^2.2.0",
     "gulp.spritesmith": "^6.0.1",
     "merge-stream": "^1.0.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/pure-js/interjacent/issues"
+  },
+  "homepage": "https://github.com/pure-js/interjacent#readme",
+  "dependencies": {
+    "gulp-load-plugins": "^1.5.0",
+    "gulp": "^4.0.0-alpha.2",
+    "gulp.spritesmith": "^6.4.0",
+    "merge-stream": "^1.0.1"
+  },
+  "keywords": [
+    "css",
+    "framework"
+  ]
 }

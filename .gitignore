@@ -1,11 +1,11 @@
 # Node
 node_modules
-npm-debug.log
+*.log
 
 # Bower
 bower_components
 
-# OS X
+# macOS
 .DS_Store
 
 # Distributive

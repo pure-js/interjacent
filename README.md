@@ -5,14 +5,14 @@ The framework in first order очередь интересен тем, что с
 
 ## Installation
 
-    bower install interjacent
+    bower i interjacent --save
 
 ## Using
 
-    @import 'bower_components/stylesheets/interjacent.styl'
+    @require 'bower_components/stylesheets/interjacent.styl'
 
 And you should define stylus variable ```path-to-sprite```
 
-## Tests
+## Testing
 
-    gulp test
+    npm test

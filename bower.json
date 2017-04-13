@@ -15,7 +15,7 @@
   "main": "README.md",
   "license": "MIT",
   "dependencies": {
-    "normalize-css": "~5.0.0"
+    "normalize-css": "~6.0.0"
   },
   "homepage": "https://github.com/pure-js/interjacent",
   "keywords": [
