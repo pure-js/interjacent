@@ -13,6 +13,10 @@ The framework in first order очередь интересен тем, что с
 
 And you should define stylus variable ```path-to-sprite```
 
+## Contribution
+
+    npm start
+
 ## Testing
 
     npm test
