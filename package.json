@@ -4,6 +4,7 @@
   "description": "interjacent front-end framework",
   "main": "README.md",
   "scripts": {
+    "start": "gulp",
     "test": "gulp test"
   },
   "repository": {
