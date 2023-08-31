@@ -1,7 +1,7 @@
 # interjacent
 Just and one front-end framework named interjacent
 
-The framework in first order очередь интересен тем, что создан для обычного пиксельного вэб сайта и является попыткой его улучшить. По сравнению с современными фрэймворками здесь присутствует не одна, а множество сеток, что является компроиссом между пиксельной и современной responsive вёрсткой. Основная часть иконок здесь так же не в векторе, а в более старом решении - спрйте. Здесь я его сохранил для того, чтобы в будующем, когда я буду сталкиваться со старыми вебсайтами, я мог легко предложить альтернативну - переходный фрэймворк, как пример того, что, можно использовать компоненты даже в deprecated projects.
+The framework in first order is interesting because it was created for a regular - before grid web site and is an attempt to improve it. Compared to modern CSS frameworks there is not one, but many grids, which is a compromise between pixel and modern responsive layout. The main part of the icons here is also not in vector, but in an older solution - sprite. I've kept it here so that in the future, when I come across old websites, I can easily offer an alternative - a transitional framework as an example that it's possible to use components even in deprecated projects.
 
 ## Installation
 
